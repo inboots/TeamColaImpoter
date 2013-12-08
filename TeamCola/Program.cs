@@ -26,10 +26,10 @@ namespace TeamCola
             List<WorkLogEntity> wlogs = xin.GetWorkLog();
             Console.WriteLine("读取到{0}条记录",wlogs.Count);
             Console.WriteLine("正在使用你的账号登陆");
-            string username = Properties.Settings.Default.username;
-            string password = Properties.Settings.Default.password;
+            //string username = Properties.Settings.Default.username;
+            //string password = Properties.Settings.Default.password;
             Cola cola = new Cola();
-            object creadits = cola.Login(username, password);
+            object creadits = cola.Login("328456347@qq.com", "xuzhi123");
             if (creadits == null)
             {
                 Console.WriteLine("登陆失败");
