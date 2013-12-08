@@ -18,7 +18,7 @@ namespace TeamCola
             Http.WebClient wc = new Http.WebClient();
             try
             {
-                string s = wc.Post(API.API_LOGIN, "timezone=8&data=%7B%22username%22%3A%22328456347%40qq.com%22%2C%22password%22%3A%22xuzhi123%22%7D");
+                string s = wc.Post(API.API_LOGIN, "timezone=8&data=%7B%22username%22%3A%22"+System.Web.HttpUtility.UrlEncode(user)+"%22%2C%22password%22%3A%22"+System.Web.HttpUtility.UrlEncode(pwd)+"%22%7D");
                 if (s.Contains("success") && s.Contains("true"))
                 {
                     cookieCredits = wc.CookieContainer;
