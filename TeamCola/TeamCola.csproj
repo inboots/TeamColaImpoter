@@ -59,6 +59,8 @@
     </Compile>
     <Compile Include="UploadEventArgs.cs" />
     <Compile Include="WebClient.cs" />
+    <Compile Include="WorkLogEntity.cs" />
+    <Compile Include="XMLImport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
